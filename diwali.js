@@ -1,9 +1,14 @@
 
-let t_date = new Date("2020/05/21");
-let d_date = new Date("2020/11/14");
 
-let diffTime = Math.abs(t_date.getTime() - d_date.getTime());
-let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+// let diffTime = Math.abs(t_date.getTime() - d_date.getTime());
+// let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+function diffDays(t_date, d_date) {
+    let diffTime = Math.abs(t_date.getTime() - d_date.getTime());
+    let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));  
+    return diffDays;
+}
+
 
 module.exports =diffDays;
 
